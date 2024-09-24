@@ -18,6 +18,8 @@ class AppTheme {
             'debe ser mayor que 0 y menor que ${_colorThemes.length}');
   ThemeData theme() {
     return ThemeData(
-        useMaterial3: true, colorSchemeSeed: _colorThemes[selectedColor]);
+        useMaterial3: true,
+        colorSchemeSeed: _colorThemes[selectedColor],
+        brightness: Brightness.light);
   }
 }
